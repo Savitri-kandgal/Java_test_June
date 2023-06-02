@@ -1,0 +1,114 @@
+java test:
+1.
+1. public static void main(String args[])
+This is the main and important method from where the JVM start the execution of program
+public: this is the access specifier, which will make main() available anywhere in the project
+static: this is non access specifier, which is used to aacess the main() without a ref of object since at the time of program execution no object were created.
+void: this is return type, main() will not return anything to JVM after fining the execution of program hence we keep return type as void.
+main(): This is the main and important method from where the JVM start the execution of program also also call it as starting point of the prgm execution
+(String args[]): arguments passed to the main(), the arguments provided in command line will be stored in this args[] as String.
+
+2.Class & Object
+Class: Class is a blue print of an object which wl have members called constructor, methods, variables, blocks. Class will compile at compilation time.
+Object: Object is an instance of a class which will have states and behaviours and object will be created in runtime.
+
+3.JVM, JRE, JDK
+there are the part of java environment
+JVM: JAVA VIRTUAL MACHINE-
+JVM is vertual machine which is used to run the byte code, and it convert the byte code to machine code and as the name says this is not physically exist.
+JRE: JAVE RUNTIME ENVIRONMENT 
+This will provide runtime environment to execute the prgm, and it contains JVM and set of libraries which is used by JVM at runtime, this is physically exist.
+JDK: JAVA DEVELOPMENT KIT
+It contains JRE and set of libraries, compiler, documentation to develop the code, this is physically exist.
+
+2. reverse a given number
+p s v m(){
+int var=1234;
+int sum=0;
+
+while(var>0){
+var%10=int r;
+sum=sum*10+r;
+var=var/10;
+}
+s.o.p(sum);
+}
+
+
+3. reverse a given String: program
+p s v m(){
+String var="program";
+String rev="";
+for(int i=var.length()-1; i>=0;i--){
+rev+=var.charAt(i);
+}
+s.o.p(rev);
+}
+
+4.
+Contructor is a special method which is having same name as class name but will not have return type.
+it is using to initialize the instance variables
+there are 3 types:
+1.no-argument constructor: it is the constructor which is added manually with no parameter/s
+2.default constructor: the constructor which is added by compiler at the time of compilation when there is no constructor added in class.
+3.parameterized constructor: the constructor which contains parameter/s
+
+5.
+this keyword: this keyword is used to defferenciate the instance variables and local variables when both of them are having same name.
+this(): this method is used for chaining the constructor within a same class.
+
+7.
+main() is static since JVM will look this method to start the prgm execution and at the time of program execution no object were created, hence this method is defined as static. 
+This is the main and important method from where the JVM start the execution of program also call it as starting point of the prgm execution
+method types:
+there are 2 types in methods:
+1.predefined: which are already defined in java documentation. ex: methods of object class
+2.user defined: which is created/written by programmer
+
+8.
+p s v m(){
+int var=100;
+for(int i=1; i<=var; i++){
+if(i%5==0 || i%10==0){
+S.o.p(i);
+}
+}
+}
+
+9.
+java class loader are used to load the classes after the compilation.
+Class loadeds are lazy since it loads the classes on demands
+
+10.
+yes, we have the private constructor, but we can create the object of that class inside the same class only.
+yes, we can overload the constructor using this keyword.
+
+ex:
+public class Simple{
+private int id;
+private String name;
+
+public Simple(int id, String name){
+this.id=id;
+this.name=name;
+
+public Simple(int id){
+this(id);
+}
+}
+
+11.
+p s v main(){
+int[] array1={12,3,2,45,6,7,6};
+int length1=array1.size;
+for(int i=0; i<array1.size; i++;){
+if(i==length1){
+s.o.p(length of array is present in the given list);
+break;
+}
+}
+}
+
+12.
+No, we can use instance variables inside the static methods becuase at the time of static binding the objects were not created. 
+Object will be created at the runtime where as static methods will be executed at the compile time.
